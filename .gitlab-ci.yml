@@ -1,0 +1,105 @@
+stages:
+  - build
+  - deploy
+
+build-dev:
+  image: maven:3.8.4-eclipse-temurin-17-alpine
+  stage: build
+  artifacts:
+    expire_in: 1 day
+    paths:
+      - target/*.jar
+  cache:
+    paths:
+      - .m2/repository
+  script:
+    - mvn install
+  tags:
+    - docker-dev
+  only:
+    - dev
+build-pre-prod:
+  image: maven:3.8.4-eclipse-temurin-17-alpine
+  stage: build
+  artifacts:
+    expire_in: 1 day
+    paths:
+      - target/*.jar
+  cache:
+    paths:
+      - .m2/repository
+  script:
+    - mvn install
+  tags:
+    - docker
+  only:
+    - pre-prod
+build-prod:
+  image: maven:3.8.4-eclipse-temurin-17-alpine
+  stage: build
+  artifacts:
+    expire_in: 1 day
+    paths:
+      - target/*.jar
+  cache:
+    paths:
+      - .m2/repository
+  script:
+    - mvn install
+  tags:
+    - docker-prod
+  only:
+    - prod
+
+deploy-prod:
+  image: kroniak/ssh-client
+  stage: deploy
+  script:
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - echo "${PRIVATE_SSH}" > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - ssh ${SSH_HOST} rm -f ~/ng-server/db-struct/target/db-struct-0.0.1-SNAPSHOT.jar
+    - scp target/db-struct-0.0.1-SNAPSHOT.jar ${SSH_HOST}:/root/ng-server/db-struct/target
+    - ssh ${SSH_HOST} docker-compose -f ~/ng-server/docker-compose.server.yml up -d --build db-struct
+    - sleep 15
+  tags:
+    - docker-prod
+  only:
+    - prod
+deploy-dev:
+  image: kroniak/ssh-client
+  stage: deploy
+  script:
+    - mkdir -p ~/.ssh
+    - chmod 400 ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - echo "${PRIVATE_SSH}" > ~/.ssh/id_rsa
+    - chmod 400 ~/.ssh/id_rsa
+    - ssh ${SSH_HOST_DEV} rm -f ~/ng-server/db-struct/target/db-struct-0.0.1-SNAPSHOT.jar
+    - scp target/db-struct-0.0.1-SNAPSHOT.jar ${SSH_HOST_DEV}:/root/ng-server/db-struct/target
+    - ssh ${SSH_HOST_DEV} docker-compose -f ~/ng-server/docker-compose.server.yml up -d --build db-struct
+    - sleep 15
+  tags:
+    - docker-dev
+  only:
+    - dev
+
+deploy-pre-prod:
+  image: kroniak/ssh-client
+  stage: deploy
+  script:
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - echo "${PRIVATE_SSH}" > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - ssh ${SSH_HOST_PRE_PROD} rm -f ~/ng-server/db-struct/target/db-struct-0.0.1-SNAPSHOT.jar
+    - scp target/db-struct-0.0.1-SNAPSHOT.jar ${SSH_HOST_PRE_PROD}:/root/ng-server/db-struct/target
+    - ssh ${SSH_HOST_PRE_PROD} docker-compose -f ~/ng-server/docker-compose.server.yml up -d --build db-struct
+    - sleep 15
+  tags:
+    - docker
+  only:
+    - pre-prod
