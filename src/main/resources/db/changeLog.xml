@@ -13,5 +13,8 @@
     <changeSet logicalFilePath="path-independent" author="Dinara" id="2">
         <createProcedure path="db/init/ce_ses_procedure.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Yerassyl" id="3">
+        <createProcedure path="db/init/v1.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 </databaseChangeLog>
