@@ -18,6 +18,7 @@ CREATE TABLE dictionary_form (
                                  id BIGINT NOT NULL DEFAULT nextval('dictionary_form_id_seq'),
                                  name VARCHAR(255) NOT NULL,
                                  code VARCHAR(255) NOT NULL,
+                                 type VARCHAR(255) NOT NULL,
                                  PRIMARY KEY (id)
 );
 
@@ -31,6 +32,7 @@ CREATE TABLE form_main (
                            deleted_by BIGINT,
                            status VARCHAR(50),
                            year BIGINT,
+                           month BIGINT,
                            quarter BIGINT,
                            send_by BIGINT,
                            send_to BIGINT,
