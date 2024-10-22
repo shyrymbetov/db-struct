@@ -14,10 +14,10 @@
         <createProcedure path="db/init/ce_ses_procedure.sql" relativeToChangelogFile="false"/>
     </changeSet>
     <changeSet logicalFilePath="path-independent" author="Yerassyl" id="3">
-        <createProcedure path="db/init/v1.sql" relativeToChangelogFile="false"/>
+        <sqlFile path="db/init/v1.sql" relativeToChangelogFile="false"/>
     </changeSet>
     <changeSet logicalFilePath="path-independent" author="Yura" id="5">
-        <createProcedure path="db/init/water_supply_form.sql" relativeToChangelogFile="false"/>
+        <sqlFile path="db/init/water_supply_form.sql" relativeToChangelogFile="false"/>
     </changeSet>
 
 
