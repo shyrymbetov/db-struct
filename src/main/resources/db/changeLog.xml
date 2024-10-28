@@ -19,6 +19,9 @@
     <changeSet logicalFilePath="path-independent" author="Yura" id="5">
         <sqlFile path="db/init/water_supply_form.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Yura" id="6">
+        <sqlFile path="db/init/add_organiztion_id_to_auth_user.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 
 
