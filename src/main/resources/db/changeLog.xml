@@ -25,6 +25,18 @@
     <changeSet logicalFilePath="path-independent" author="Yura" id="7">
         <sqlFile path="db/init/update_form_main.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Yura" id="8">
+        <sqlFile path="db/init/report_and_reporg.sql" relativeToChangelogFile="false"/>
+    </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Yura" id="9">
+        <sqlFile path="db/init/add_send_to_org_id_to_form_main.sql" relativeToChangelogFile="false"/>
+    </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Yura" id="10">
+        <sqlFile path="db/init/delete_unnecessary_filelds_from_form_main.sql" relativeToChangelogFile="false"/>
+    </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Yura" id="11">
+        <sqlFile path="db/init/delete_organization_id__from_report.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 
 
