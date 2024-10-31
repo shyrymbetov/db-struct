@@ -37,6 +37,10 @@
     <changeSet logicalFilePath="path-independent" author="Yura" id="11">
         <sqlFile path="db/init/delete_organization_id__from_report.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Yura" id="12">
+        <sqlFile path="db/init/seed_roles.sql" relativeToChangelogFile="false"/>
+    </changeSet>
+
 
 
 
