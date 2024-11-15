@@ -1,0 +1,2 @@
+ALTER TABLE reservoir
+    ADD COLUMN name VARCHAR(255);

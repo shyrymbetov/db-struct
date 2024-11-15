@@ -43,6 +43,9 @@
     <changeSet logicalFilePath="path-independent" author="Yura" id="13">
         <sqlFile path="db/init/add_reservoir_and_change_columns.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Yura" id="14">
+        <sqlFile path="db/init/add_name_to_reservoir.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 
 
