@@ -40,7 +40,9 @@
     <changeSet logicalFilePath="path-independent" author="Yura" id="12">
         <sqlFile path="db/init/seed_roles.sql" relativeToChangelogFile="false"/>
     </changeSet>
-
+    <changeSet logicalFilePath="path-independent" author="Yura" id="13">
+        <sqlFile path="db/init/add_reservoir_and_change_columns.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 
 
