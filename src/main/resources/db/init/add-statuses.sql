@@ -31,5 +31,5 @@ CREATE TABLE report_puv (
                             quarter                BIGINT,
                             quarter_date           DATE,
                             status_id              INTEGER,
-                            CONSTRAINT fk_status FOREIGN KEY (status_id) REFERENCES status_table(id)
+                            CONSTRAINT fk_status FOREIGN KEY (status_id) REFERENCES status(id)
 );
