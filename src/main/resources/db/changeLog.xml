@@ -55,7 +55,8 @@
     <changeSet logicalFilePath="path-independent" author="Nurd" id="17">
         <sqlFile path="db/init/puv-tables.sql" relativeToChangelogFile="false"/>
     </changeSet>
-
-
+    <changeSet logicalFilePath="path-independent" author="Dinara" id="15">
+        <sqlFile path="db/init/21.11.24_extra_col_tables.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 </databaseChangeLog>
