@@ -59,4 +59,8 @@
         <sqlFile path="db/init/21.11.24_extra_col_tables.sql" relativeToChangelogFile="false"/>
     </changeSet>
 
+    <changeSet logicalFilePath="path-independent" author="Nurd" id="18">
+        <sqlFile path="db/init/add-statuses.sql" relativeToChangelogFile="false"/>
+    </changeSet>
+
 </databaseChangeLog>
