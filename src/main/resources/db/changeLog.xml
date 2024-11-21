@@ -49,10 +49,23 @@
     <changeSet logicalFilePath="path-independent" author="Yura" id="15">
         <sqlFile path="db/init/add_report_tp.sql" relativeToChangelogFile="false"/>
     </changeSet>
-    <changeSet logicalFilePath="path-independent" author="Yura" id="16">
+    <changeSet logicalFilePath="path-independent" author="Nurd" id="16">
+        <sqlFile path="db/init/add-new-table.sql" relativeToChangelogFile="false"/>
+    </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Nurd" id="17">
+        <sqlFile path="db/init/puv-tables.sql" relativeToChangelogFile="false"/>
+    </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Dinara" id="15">
+        <sqlFile path="db/init/21.11.24_extra_col_tables.sql" relativeToChangelogFile="false"/>
+    </changeSet>
+
+    <changeSet logicalFilePath="path-independent" author="Nurd" id="18">
+        <sqlFile path="db/init/add-statuses.sql" relativeToChangelogFile="false"/>
+    </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Yura" id="19">
         <sqlFile path="db/init/add_auditable_to_report_tp.sql" relativeToChangelogFile="false"/>
     </changeSet>
-    <changeSet logicalFilePath="path-independent" author="Yura" id="17">
+    <changeSet logicalFilePath="path-independent" author="Yura" id="20">
         <sqlFile path="db/init/add_status_to_report_tp.sql" relativeToChangelogFile="false"/>
     </changeSet>
 
