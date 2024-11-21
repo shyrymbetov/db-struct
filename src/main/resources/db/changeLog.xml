@@ -49,6 +49,12 @@
     <changeSet logicalFilePath="path-independent" author="Yura" id="15">
         <sqlFile path="db/init/add_report_tp.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Nurd" id="16">
+        <sqlFile path="db/init/add-new-table.sql" relativeToChangelogFile="false"/>
+    </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Nurd" id="17">
+        <sqlFile path="db/init/puv-tables.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 
 
