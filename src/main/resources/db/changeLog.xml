@@ -68,6 +68,10 @@
     <changeSet logicalFilePath="path-independent" author="Yura" id="20">
         <sqlFile path="db/init/add_status_to_report_tp.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Yura" id="21">
+        <sqlFile path="db/init/add_reservoir_to_watersupplyform.sql" relativeToChangelogFile="false"/>
+    </changeSet>
+
 
 
 </databaseChangeLog>
