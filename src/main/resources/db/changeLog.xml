@@ -71,6 +71,12 @@
     <changeSet logicalFilePath="path-independent" author="Yura" id="21">
         <sqlFile path="db/init/add_reservoir_to_watersupplyform.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Olzhas" id="22">
+        <sqlFile path="db/init/channel-table.sql" relativeToChangelogFile="false"/>
+    </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Olzhas" id="23">
+        <sqlFile path="db/init/channel-table-change-types.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 
 
