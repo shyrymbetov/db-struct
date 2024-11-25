@@ -71,6 +71,9 @@
     <changeSet logicalFilePath="path-independent" author="Yura" id="21">
         <sqlFile path="db/init/add_reservoir_to_watersupplyform.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Yura" id="22">
+        <sqlFile path="db/init/add_model_to_formmain.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 
 
