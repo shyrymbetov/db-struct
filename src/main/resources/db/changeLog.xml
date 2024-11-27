@@ -86,6 +86,10 @@
     <changeSet logicalFilePath="path-independent" author="Yura" id="26">
         <sqlFile path="db/init/tp3_transform_float_fields.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Yura" id="27">
+        <sqlFile path="db/init/model_to_report.sql" relativeToChangelogFile="false"/>
+    </changeSet>
+
 
 
 
