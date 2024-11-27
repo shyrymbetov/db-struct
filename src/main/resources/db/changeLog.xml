@@ -83,6 +83,9 @@
     <changeSet logicalFilePath="path-independent" author="Yura" id="25">
         <sqlFile path="db/init/crossborder.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Yura" id="26">
+        <sqlFile path="db/init/tp3_transform_float_fields.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 
 
