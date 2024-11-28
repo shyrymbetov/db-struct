@@ -95,5 +95,9 @@
     <changeSet logicalFilePath="path-independent" author="Dinara" id="29">
         <sqlFile path="db/init/28.11.2024_add_level_to_org.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Yura" id="30">
+        <sqlFile path="db/init/28.11.25_add_status_to_report.sql" relativeToChangelogFile="false"/>
+    </changeSet>
+
 
 </databaseChangeLog>

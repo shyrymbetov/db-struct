@@ -1,0 +1,2 @@
+ALTER TABLE report
+    ADD COLUMN status VARCHAR(255);
