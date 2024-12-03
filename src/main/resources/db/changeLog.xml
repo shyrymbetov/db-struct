@@ -98,6 +98,9 @@
     <changeSet logicalFilePath="path-independent" author="Yura" id="30">
         <sqlFile path="db/init/28.11.25_add_status_to_report.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Yura" id="31">
+        <sqlFile path="db/init/3.12.24_delete_dictonary.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 
 </databaseChangeLog>
