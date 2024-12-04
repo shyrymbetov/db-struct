@@ -104,5 +104,8 @@
     <changeSet logicalFilePath="path-independent" author="Dinara" id="32">
         <sqlFile path="db/init/3.12.24_add_form_id_reports.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Dinara" id="33">
+        <sqlFile path="db/init/4.12.24_create_history_table.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 </databaseChangeLog>
