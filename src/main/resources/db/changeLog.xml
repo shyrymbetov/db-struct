@@ -107,5 +107,8 @@
     <changeSet logicalFilePath="path-independent" author="Dinara" id="33">
         <sqlFile path="db/init/4.12.24_create_history_table.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Yura" id="34">
+        <sqlFile path="db/init/4.12.24_fix_history_table.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 </databaseChangeLog>
