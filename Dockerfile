@@ -1,14 +1,14 @@
-FROM 10.0.84.11:31082/maven:3-eclipse-temurin-11-alpine AS build
+FROM 10.0.84.11:31082/maven:3.8.4-eclipse-temurin-17-alpine AS build
 
 WORKDIR /app
 
 COPY pom.xml .
-RUN mvn dependency:resolve
+#RUN mvn dependency:resolve
 
 COPY . .
 RUN mvn package -s .m2/settings.xml
-
-FROM 10.0.84.11:31082/eclipse-temurin:11-jre-alpine
+RUN ls -la /app/target
+FROM 10.0.84.11:31082/eclipse-temurin:17-jre-alpine
 
 MAINTAINER TOO Reself <info@reself.kz>
 
