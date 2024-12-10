@@ -110,5 +110,8 @@
     <changeSet logicalFilePath="path-independent" author="Yura" id="34">
         <sqlFile path="db/init/4.12.24_fix_history_table.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Dinara" id="40">
+        <sqlFile path="db/init/10.12.24_add_columns_water_supply.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 </databaseChangeLog>
