@@ -113,5 +113,8 @@
     <changeSet logicalFilePath="path-independent" author="Dinara" id="40">
         <sqlFile path="db/init/10.12.24_add_columns_water_supply.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Dinara" id="41">
+        <sqlFile path="db/init/11.12.2024_add_extra_role.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 </databaseChangeLog>
