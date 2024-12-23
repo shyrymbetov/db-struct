@@ -131,6 +131,9 @@
     <changeSet logicalFilePath="path-independent" author="Nurda" id="46">
         <sqlFile path="db/init/24-12-10-fill-org-dicts.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Nurda" id="47">
+        <sqlFile path="db/init/24-12-23-new-fk-org.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 
 </databaseChangeLog>
