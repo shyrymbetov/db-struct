@@ -119,6 +119,9 @@
     <changeSet logicalFilePath="path-independent" author="Dinara" id="42">
         <sqlFile path="db/init/12.12.24_add_issigned_to_form_main.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Dinara" id="43">
+        <sqlFile path="db/init/17.12.24_add_new_table_hydralic_structure.sql" relativeToChangelogFile="false"/>
+    </changeSet>
     <changeSet logicalFilePath="path-independent" author="Nurda" id="43">
         <sqlFile path="db/init/24-12-09-add_new_dict.sql" relativeToChangelogFile="false"/>
     </changeSet>
