@@ -140,5 +140,8 @@
     <changeSet logicalFilePath="path-independent" author="Aboka" id="48">
         <sqlFile path="db/init/2024-12-24-rename_table.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Nurda" id="49">
+        <sqlFile path="db/init/2024-12-25-add-new-org-type.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 </databaseChangeLog>
