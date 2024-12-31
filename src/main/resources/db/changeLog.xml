@@ -146,5 +146,8 @@
     <changeSet logicalFilePath="path-independent" author="Nurda" id="50">
         <sqlFile path="db/init/2024-12-26-create-new-table.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Nurda" id="51">
+        <sqlFile path="db/init/2024-12-31-add-new-role.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 </databaseChangeLog>
