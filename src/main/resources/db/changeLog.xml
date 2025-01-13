@@ -149,5 +149,8 @@
     <changeSet logicalFilePath="path-independent" author="Nurda" id="51">
         <sqlFile path="db/init/2024-12-31-add-new-role.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Aboka" id="52">
+        <sqlFile path="db/init/13.1.25-add-new-colm-reservoir-table.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 </databaseChangeLog>
