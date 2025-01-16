@@ -152,5 +152,8 @@
     <changeSet logicalFilePath="path-independent" author="Aboka" id="52">
         <sqlFile path="db/init/13.1.25-add-new-colm-reservoir-table.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Olzhas" id="53">
+        <sqlFile path="db/init/16.01.25-changed-type-of-columns-water-supply-form.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 </databaseChangeLog>
