@@ -155,5 +155,10 @@
     <changeSet logicalFilePath="path-independent" author="Olzhas" id="53">
         <sqlFile path="db/init/16.01.25-changed-type-of-columns-water-supply-form.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Yura" id="54">
+        <sqlFile path="db/init/17.01.25_add_version_to_water_supply.sql" relativeToChangelogFile="false"/>
+    </changeSet>
+
+
 
 </databaseChangeLog>
