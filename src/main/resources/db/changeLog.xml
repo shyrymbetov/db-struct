@@ -19,6 +19,9 @@
     <changeSet logicalFilePath="path-independent" author="Alina" id="4">
         <createProcedure path="db/init/002-is-arhieved-product.sql" relativeToChangelogFile="false"/>
     </changeSet>
+    <changeSet logicalFilePath="path-independent" author="Alina" id="5">
+        <createProcedure path="db/init/003-photo.sql" relativeToChangelogFile="false"/>
+    </changeSet>
 
 
 </databaseChangeLog>
